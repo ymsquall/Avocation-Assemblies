@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{390CDF33-990D-4492-BBF9-2C9A79889D2F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Framework.Winista.Htmlparser</RootNamespace>
+    <AssemblyName>Framework.Winista.Htmlparser</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <CodeContractsAssemblyMode>0</CodeContractsAssemblyMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET_3_5;UNITY3D;UNITY_5</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRuntimeSkipQuantifiers>False</CodeContractsRuntimeSkipQuantifiers>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>True</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>True</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>True</CodeContractsArithmeticObligations>
+    <CodeContractsEnumObligations>True</CodeContractsEnumObligations>
+    <CodeContractsRedundantAssumptions>True</CodeContractsRedundantAssumptions>
+    <CodeContractsAssertsToContractsCheckBox>True</CodeContractsAssertsToContractsCheckBox>
+    <CodeContractsRedundantTests>True</CodeContractsRedundantTests>
+    <CodeContractsMissingPublicRequiresAsWarnings>True</CodeContractsMissingPublicRequiresAsWarnings>
+    <CodeContractsMissingPublicEnsuresAsWarnings>False</CodeContractsMissingPublicEnsuresAsWarnings>
+    <CodeContractsInferRequires>True</CodeContractsInferRequires>
+    <CodeContractsInferEnsures>False</CodeContractsInferEnsures>
+    <CodeContractsInferEnsuresAutoProperties>True</CodeContractsInferEnsuresAutoProperties>
+    <CodeContractsInferObjectInvariants>False</CodeContractsInferObjectInvariants>
+    <CodeContractsSuggestAssumptions>False</CodeContractsSuggestAssumptions>
+    <CodeContractsSuggestAssumptionsForCallees>False</CodeContractsSuggestAssumptionsForCallees>
+    <CodeContractsSuggestRequires>False</CodeContractsSuggestRequires>
+    <CodeContractsNecessaryEnsures>True</CodeContractsNecessaryEnsures>
+    <CodeContractsSuggestObjectInvariants>False</CodeContractsSuggestObjectInvariants>
+    <CodeContractsSuggestReadonly>True</CodeContractsSuggestReadonly>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>True</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>False</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsSQLServerOption />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>True</CodeContractsCacheAnalysisResults>
+    <CodeContractsSkipAnalysisIfCannotConnectToCache>False</CodeContractsSkipAnalysisIfCannotConnectToCache>
+    <CodeContractsFailBuildOnWarnings>False</CodeContractsFailBuildOnWarnings>
+    <CodeContractsBeingOptimisticOnExternal>True</CodeContractsBeingOptimisticOnExternal>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>%28none%29</CodeContractsReferenceAssembly>
+    <CodeContractsAnalysisWarningLevel>0</CodeContractsAnalysisWarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NET_3_5</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\Unity3D\01.PuzzleQuest\Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HtmlParser2003\AssemblyInfo.cs" />
+    <Compile Include="HtmlParser2003\Data\AbstractData.cs" />
+    <Compile Include="HtmlParser2003\Data\ColumnData.cs" />
+    <Compile Include="HtmlParser2003\Data\ColumnDataCollection.cs" />
+    <Compile Include="HtmlParser2003\Data\HeadData.cs" />
+    <Compile Include="HtmlParser2003\Data\ImageData.cs" />
+    <Compile Include="HtmlParser2003\Data\ImageDataCollection.cs" />
+    <Compile Include="HtmlParser2003\Data\LinkData.cs" />
+    <Compile Include="HtmlParser2003\Data\LinkDataCollection.cs" />
+    <Compile Include="HtmlParser2003\Data\MetaTagData.cs" />
+    <Compile Include="HtmlParser2003\Data\MetaTagDataCollection.cs" />
+    <Compile Include="HtmlParser2003\Data\PageData.cs" />
+    <Compile Include="HtmlParser2003\Data\RowData.cs" />
+    <Compile Include="HtmlParser2003\Data\RowDataCollection.cs" />
+    <Compile Include="HtmlParser2003\Data\TableData.cs" />
+    <Compile Include="HtmlParser2003\Data\TableDataCollection.cs" />
+    <Compile Include="HtmlParser2003\Extractors\AbstractExtractor.cs" />
+    <Compile Include="HtmlParser2003\Extractors\EmailAddressExtractor.cs" />
+    <Compile Include="HtmlParser2003\Extractors\ImageExtractor.cs" />
+    <Compile Include="HtmlParser2003\Extractors\ImageLinkExtractor.cs" />
+    <Compile Include="HtmlParser2003\Extractors\LinkExtractor.cs" />
+    <Compile Include="HtmlParser2003\Extractors\PageExtractor.cs" />
+    <Compile Include="HtmlParser2003\Extractors\StringExtractor.cs" />
+    <Compile Include="HtmlParser2003\Extractors\TableExtractor.cs" />
+    <Compile Include="HtmlParser2003\Filters\AndFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\AttributeRegexFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\HasAttributeFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\HasChildFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\HasParentFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\HasSiblingFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\IsEqualFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\LinkRegexFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\LinkStringFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\MailLinkFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\NodeClassFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\NotFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\OrFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\RegexFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\StringFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\TagNameFilter.cs" />
+    <Compile Include="HtmlParser2003\Filters\XorFilter.cs" />
+    <Compile Include="HtmlParser2003\Http\HttpError.cs" />
+    <Compile Include="HtmlParser2003\Http\HttpProtocol.cs" />
+    <Compile Include="HtmlParser2003\Http\HttpProtocolContent.cs" />
+    <Compile Include="HtmlParser2003\Http\HttpProtocolOutput.cs" />
+    <Compile Include="HtmlParser2003\Http\HttpProtocolStatus.cs" />
+    <Compile Include="HtmlParser2003\Http\HttpResponseMgr.cs" />
+    <Compile Include="HtmlParser2003\Http\HttpUtil.cs" />
+    <Compile Include="HtmlParser2003\Http\ResourceGoneException.cs" />
+    <Compile Include="HtmlParser2003\Http\RetryLaterException.cs" />
+    <Compile Include="HtmlParser2003\Http\RobotBlockedException.cs" />
+    <Compile Include="HtmlParser2003\Http\RobotRulesParser.cs" />
+    <Compile Include="HtmlParser2003\INode.cs" />
+    <Compile Include="HtmlParser2003\INodeFactory.cs" />
+    <Compile Include="HtmlParser2003\INodeFilter.cs" />
+    <Compile Include="HtmlParser2003\IRemark.cs" />
+    <Compile Include="HtmlParser2003\ITag.cs" />
+    <Compile Include="HtmlParser2003\IText.cs" />
+    <Compile Include="HtmlParser2003\Lex\Cursor.cs" />
+    <Compile Include="HtmlParser2003\Lex\InputStreamSource.cs" />
+    <Compile Include="HtmlParser2003\Lex\Lexer.cs" />
+    <Compile Include="HtmlParser2003\Lex\Page.cs" />
+    <Compile Include="HtmlParser2003\Lex\PageAttribute.cs" />
+    <Compile Include="HtmlParser2003\Lex\PageIndex.cs" />
+    <Compile Include="HtmlParser2003\Lex\ParserStream.cs" />
+    <Compile Include="HtmlParser2003\Lex\Source.cs" />
+    <Compile Include="HtmlParser2003\Lex\StringSource.cs" />
+    <Compile Include="HtmlParser2003\Nodes\AbstractNode.cs" />
+    <Compile Include="HtmlParser2003\Nodes\RemarkNode.cs" />
+    <Compile Include="HtmlParser2003\Nodes\TagNode.cs" />
+    <Compile Include="HtmlParser2003\Nodes\TextNode.cs" />
+    <Compile Include="HtmlParser2003\Parser.cs" />
+    <Compile Include="HtmlParser2003\PrototypicalNodeFactory.cs" />
+    <Compile Include="HtmlParser2003\Scanners\CompositeTagScanner.cs" />
+    <Compile Include="HtmlParser2003\Scanners\IScanner.cs" />
+    <Compile Include="HtmlParser2003\Scanners\JspScanner.cs" />
+    <Compile Include="HtmlParser2003\Scanners\ScriptDecoder.cs" />
+    <Compile Include="HtmlParser2003\Scanners\ScriptScanner.cs" />
+    <Compile Include="HtmlParser2003\Scanners\StyleScanner.cs" />
+    <Compile Include="HtmlParser2003\Scanners\TagScanner.cs" />
+    <Compile Include="HtmlParser2003\Support\HashSetSupport.cs" />
+    <Compile Include="HtmlParser2003\Support\ICollectionSupport.cs" />
+    <Compile Include="HtmlParser2003\Support\ISetSupport.cs" />
+    <Compile Include="HtmlParser2003\Support\SupportMisc.cs" />
+    <Compile Include="HtmlParser2003\Support\Tokenizer.cs" />
+    <Compile Include="HtmlParser2003\TagAttribute.cs" />
+    <Compile Include="HtmlParser2003\Tags\AppletTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\ATag.cs" />
+    <Compile Include="HtmlParser2003\Tags\BaseHrefTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\BodyTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\Bullet.cs" />
+    <Compile Include="HtmlParser2003\Tags\BulletList.cs" />
+    <Compile Include="HtmlParser2003\Tags\CodeTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\CompositeTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\DefinitionList.cs" />
+    <Compile Include="HtmlParser2003\Tags\DefinitionListBullet.cs" />
+    <Compile Include="HtmlParser2003\Tags\Div.cs" />
+    <Compile Include="HtmlParser2003\Tags\DoctypeTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\FormTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\FrameSetTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\FrameTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\HeadingTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\HeadTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\Html.cs" />
+    <Compile Include="HtmlParser2003\Tags\IFrameTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\ImageTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\InputTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\JspTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\LabelTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\LinkTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\MetaTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\ObjectTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\OptionTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\ParagraphTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\ScriptTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\SelectTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\Span.cs" />
+    <Compile Include="HtmlParser2003\Tags\StyleTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\TableColumn.cs" />
+    <Compile Include="HtmlParser2003\Tags\TableHeader.cs" />
+    <Compile Include="HtmlParser2003\Tags\TableRow.cs" />
+    <Compile Include="HtmlParser2003\Tags\TableTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\TextareaTag.cs" />
+    <Compile Include="HtmlParser2003\Tags\TitleTag.cs" />
+    <Compile Include="HtmlParser2003\Util\ChainedException.cs" />
+    <Compile Include="HtmlParser2003\Util\CharacterReference.cs" />
+    <Compile Include="HtmlParser2003\Util\CharacterReferenceEx.cs" />
+    <Compile Include="HtmlParser2003\Util\ContentProperties.cs" />
+    <Compile Include="HtmlParser2003\Util\DefaultParserFeedback.cs" />
+    <Compile Include="HtmlParser2003\Util\EncodingChangeException.cs" />
+    <Compile Include="HtmlParser2003\Util\FeedbackManager.cs" />
+    <Compile Include="HtmlParser2003\Util\GZIPUtils.cs" />
+    <Compile Include="HtmlParser2003\Util\INodeIterator.cs" />
+    <Compile Include="HtmlParser2003\Util\IParserFeedBack.cs" />
+    <Compile Include="HtmlParser2003\Util\ISimpleNodeIterator.cs" />
+    <Compile Include="HtmlParser2003\Util\IteratorImpl.cs" />
+    <Compile Include="HtmlParser2003\Util\NodeList.cs" />
+    <Compile Include="HtmlParser2003\Util\ParserConf.cs" />
+    <Compile Include="HtmlParser2003\Util\ParserException.cs" />
+    <Compile Include="HtmlParser2003\Util\ParserUtils.cs" />
+    <Compile Include="HtmlParser2003\Util\Sort\IOrdered.cs" />
+    <Compile Include="HtmlParser2003\Util\Sort\ISortable.cs" />
+    <Compile Include="HtmlParser2003\Util\Sort\SortImpl.cs" />
+    <Compile Include="HtmlParser2003\Util\SpecialHashtable.cs" />
+    <Compile Include="HtmlParser2003\Util\StringUtil.cs" />
+    <Compile Include="HtmlParser2003\Util\Translate.cs" />
+    <Compile Include="HtmlParser2003\Visitors\HtmlPage.cs" />
+    <Compile Include="HtmlParser2003\Visitors\LinkFindingVisitor.cs" />
+    <Compile Include="HtmlParser2003\Visitors\NodeVisitor.cs" />
+    <Compile Include="HtmlParser2003\Visitors\TagFindingVisitor.cs" />
+    <Compile Include="HtmlParser2003\Visitors\TextExtractingVisitor.cs" />
+    <Compile Include="HtmlParser2003\Visitors\UrlModifyingVisitor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Htmlparser.chm" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HtmlParser2003\htmlparser-conf.xsl" />
+    <Content Include="HtmlParser2003\htmlparser-default.xml" />
+    <Content Include="HtmlParser2003\htmlparser-site.xml" />
+    <Content Include="HtmlParser2003\HtmlParser2003.csproj" />
+    <Content Include="HtmlParser2003\HtmlParser2003.sln" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Platforms\PlatformSDK\PlatformSDK.Unity3D.csproj">
+      <Project>{c5eee854-6b60-4935-ad85-10f146074fc7}</Project>
+      <Name>PlatformSDK.Unity3D</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy $(TargetPath) $(SolutionDir)..\Unity3D\Plugins\x86_64\ /s
+xcopy $(ProjectDir)$(OutDir)$(TargetName).pdb $(SolutionDir)..\Unity3D\Plugins\x86_64\ /s</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>del $(SolutionDir)..\Unity3D\Plugins\x86_64\$(TargetFileName)
+del $(SolutionDir)..\Unity3D\Plugins\x86_64\$(TargetName).pdb</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

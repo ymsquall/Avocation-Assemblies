@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{133D4543-55DA-9C9B-30CD-863327B7E745}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>NGUIEngine.Editor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>5.5.0f3</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_ANDROID;ENABLE_SUBSTANCE;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VIDEO;ENABLE_VR;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;ENABLE_VSTU;UNITY_PRO_LICENSE</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Advertisements">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.EditorTestsRunner">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.EditorTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PlaymodeTestsRunner">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PlaymodeTestsRunner">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TreeEditor">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Analytics">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.HoloLens">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.VR">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VR">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEngine.VR.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>E:\works\Jobs\Unity3D\NGUIEngine\Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="NGUIEngine.csproj">
+      <Project>{6F96FA50-3DFD-EBE3-D12B-0CC5EB1F9CF9}</Project>
+      <Name>NGUIEngine</Name>
+    </ProjectReference>
+  </ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Assets\NGUI\Scripts\Editor\" />
+		<Folder Include="Assets\UnbindEditor\Editor\Extented\" />
+		<Folder Include="Assets\UnbindEditor\Editor\" />
+		<Folder Include="Assets\UnbindEditor\Editor\Attribute\" />
+		<Folder Include="Assets\UnbindEditor\Editor\Sealed\" />
+		<Folder Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\TweenColorEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\TweenColorEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\TweenFOVEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\TweenFOVEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UI2DSpriteEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UI2DSpriteEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\BMFontReader.cs">
+			<Link>Assets\NGUI\Scripts\Editor\BMFontReader.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIButtonEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIButtonEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UITexturePacker.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UITexturePacker.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIColorPickerEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIColorPickerEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIAtlasInspector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIAtlasInspector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIButtonKeysEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIButtonKeysEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIDragObjectEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIDragObjectEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\EventDelegateEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\EventDelegateEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIDrawCallViewer.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIDrawCallViewer.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UICreateWidgetWizard.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UICreateWidgetWizard.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\NGUITransformInspector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\NGUITransformInspector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIRectEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIRectEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\TweenAlphaEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\TweenAlphaEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIGridEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIGridEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIProgressBarEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIProgressBarEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\PropertyBindingEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\PropertyBindingEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\TweenOrthoSizeEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\TweenOrthoSizeEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIFontMaker.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIFontMaker.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\NGUISnap.cs">
+			<Link>Assets\NGUI\Scripts\Editor\NGUISnap.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UITextureInspector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UITextureInspector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\FreeType.cs">
+			<Link>Assets\NGUI\Scripts\Editor\FreeType.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIWidgetContainerEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIKeyNavigationEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIKeyNavigationEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\ActiveAnimationEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\ActiveAnimationEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UISpriteInspector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UISpriteInspector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\NGUIEditorExtensions.cs">
+			<Link>Assets\NGUI\Scripts\Editor\NGUIEditorExtensions.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UISpriteAnimationInspector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UISpriteAnimationInspector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIEventTriggerEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIEventTriggerEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\NGUIHelp.cs">
+			<Link>Assets\NGUI\Scripts\Editor\NGUIHelp.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\NGUISelectionTools.cs">
+			<Link>Assets\NGUI\Scripts\Editor\NGUISelectionTools.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UITweenerEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UITweenerEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIPanelTool.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIPanelTool.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\NGUIContextMenu.cs">
+			<Link>Assets\NGUI\Scripts\Editor\NGUIContextMenu.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\ComponentSelector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\ComponentSelector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UISnapshotPointEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UISnapshotPointEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\TweenVolumeEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\TweenVolumeEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UISliderEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UISliderEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UICameraEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UICameraEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\TweenPositionEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\TweenPositionEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\TweenScaleEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\TweenScaleEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\PropertyReferenceDrawer.cs">
+			<Link>Assets\NGUI\Scripts\Editor\PropertyReferenceDrawer.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIButtonMessageEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIButtonMessageEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIWidgetInspector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIWidgetInspector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\EventDelegateDrawer.cs">
+			<Link>Assets\NGUI\Scripts\Editor\EventDelegateDrawer.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIPlayTweenEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIPlayTweenEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\TypewriterEffectEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\TypewriterEffectEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIWrapContentEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIWrapContentEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\TweenRotationEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\TweenRotationEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\TweenTransformEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\TweenTransformEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIRootEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIRootEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\TweenHeightEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\TweenHeightEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UITableEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UITableEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIImageButtonInspector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIImageButtonInspector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UILabelInspector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UILabelInspector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIInputEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIInputEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\NGUIMenu.cs">
+			<Link>Assets\NGUI\Scripts\Editor\NGUIMenu.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\NGUIHandles.cs">
+			<Link>Assets\NGUI\Scripts\Editor\NGUIHandles.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIForwardEventsEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIForwardEventsEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIAtlasMaker.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIAtlasMaker.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\SpriteSelector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\SpriteSelector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIToggleInspector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIToggleInspector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIDrawCallInspector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIDrawCallInspector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIScrollViewEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIScrollViewEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIPrefabTool.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIPrefabTool.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\NGUISettings.cs">
+			<Link>Assets\NGUI\Scripts\Editor\NGUISettings.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIScrollBarEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIScrollBarEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UILocalizeEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UILocalizeEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\NGUIJson.cs">
+			<Link>Assets\NGUI\Scripts\Editor\NGUIJson.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIPanelInspector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIPanelInspector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIButtonColorEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIButtonColorEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIPlayAnimationEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIPlayAnimationEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UICameraTool.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UICameraTool.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIBasicSpriteEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIBasicSpriteEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIAnchorEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIAnchorEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\TweenWidthEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\TweenWidthEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIStretchEditor.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIStretchEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIPopupListInspector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIPopupListInspector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UICreateNewUIWizard.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UICreateNewUIWizard.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\UIFontInspector.cs">
+			<Link>Assets\NGUI\Scripts\Editor\UIFontInspector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Scripts\Editor\NGUIEditorTools.cs">
+			<Link>Assets\NGUI\Scripts\Editor\NGUIEditorTools.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\UnbindEditor\Editor\Extented\UIDrawCallExtentedEditor.cs">
+			<Link>Assets\UnbindEditor\Editor\Extented\UIDrawCallExtentedEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\UnbindEditor\Editor\Extented\UIRectExtentedEditor.cs">
+			<Link>Assets\UnbindEditor\Editor\Extented\UIRectExtentedEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\UnbindEditor\Editor\Extented\UILabelExtentedEditor.cs">
+			<Link>Assets\UnbindEditor\Editor\Extented\UILabelExtentedEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\UnbindEditor\Editor\Extented\UIWidgetExtentedEditor.cs">
+			<Link>Assets\UnbindEditor\Editor\Extented\UIWidgetExtentedEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\UnbindEditor\Editor\Extented\UIPanelExtentedEditor.cs">
+			<Link>Assets\UnbindEditor\Editor\Extented\UIPanelExtentedEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\UnbindEditor\Editor\Extented\UIScrollViewExtentedEditor.cs">
+			<Link>Assets\UnbindEditor\Editor\Extented\UIScrollViewExtentedEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\UnbindEditor\Editor\UnbindEditorEntry.cs">
+			<Link>Assets\UnbindEditor\Editor\UnbindEditorEntry.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\UnbindEditor\Editor\Attribute\InterfaceInjectionAttribute.cs">
+			<Link>Assets\UnbindEditor\Editor\Attribute\InterfaceInjectionAttribute.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\UnbindEditor\Editor\Sealed\AssetDatabaseSealedEditor.cs">
+			<Link>Assets\UnbindEditor\Editor\Sealed\AssetDatabaseSealedEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\UnbindEditor\Editor\Sealed\EditorUtilitySealedEditor.cs">
+			<Link>Assets\UnbindEditor\Editor\Sealed\EditorUtilitySealedEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\UnbindEditor\Editor\Sealed\ApplicationSealedEditor.cs">
+			<Link>Assets\UnbindEditor\Editor\Sealed\ApplicationSealedEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\UnbindEditor\Editor\Sealed\EditorPrefsSealedEditor.cs">
+			<Link>Assets\UnbindEditor\Editor\Sealed\EditorPrefsSealedEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\UnbindEditor\Editor\Sealed\UndoSealedEditor.cs">
+			<Link>Assets\UnbindEditor\Editor\Sealed\UndoSealedEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\UnbindEditor\Editor\Sealed\SelectionSealedEditor.cs">
+			<Link>Assets\UnbindEditor\Editor\Sealed\SelectionSealedEditor.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvDatabaseInspector.cs">
+			<Link>Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvDatabaseInspector.cs</Link>
+		</Compile>
+		<Compile Include="E:\works\Jobs\Unity3D\NGUIEngine\Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvFindItem.cs">
+			<Link>Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvFindItem.cs</Link>
+		</Compile>
+	</ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <PropertyGroup>
+    <PreBuildEvent>
+      del $(SolutionDir)..\Unity3D\Plugins\x86_64\Editor\$(TargetFileName)
+      del $(SolutionDir)..\Unity3D\Plugins\x86_64\Editor\$(TargetName).pdb
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+      xcopy $(TargetPath) $(SolutionDir)..\Unity3D\Plugins\x86_64\Editor\ /s
+      xcopy $(ProjectDir)$(OutDir)$(TargetName).pdb $(SolutionDir)..\Unity3D\Plugins\x86_64\Editor\ /s
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
