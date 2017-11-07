@@ -1,7 +1,8 @@
-/.vs
+.vs
 
 *.user
 *.pyc
+*.DS_Store
 /**/Temp/UnityVS_*
 /**/bin/Debug
 /**/bin/Release
