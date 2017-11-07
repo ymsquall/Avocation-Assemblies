@@ -2,9 +2,8 @@
 
 *.user
 *.pyc
-UnityVS_bin
-UnityVS_obj
-/**/bin/Debug/
-/**/bin/Release/
-/**/obj/Debug/
-/**/obj/Release/
+/**/Temp/UnityVS_*
+/**/bin/Debug
+/**/bin/Release
+/**/obj/Debug
+/**/obj/Release
